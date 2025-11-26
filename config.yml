@@ -1,0 +1,163 @@
+---
+configure_dotfiles: true
+stow_dotfiles: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - TV
+  - Music
+  - News
+  - Safari
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Contacts
+  - Reminders
+  - Freeform
+  - Keynote
+  - Numbers
+  - Pages
+  - "App Store"
+dockitems_persist:
+  - name: "Brave Browser"
+    path: "/Applications/Brave Browser Nightly.app"
+    pos: 3
+  - name: "Notes"
+    path: "/Applications/Notes.app"
+    pos: 4
+  - name: "Calendar"
+    path: "/Applications/Calendar.app"
+    pos: 5
+  - name: "Ghostty"
+    path: "/Applications/Ghostty.app"
+    pos: 6
+  - name: "Slack"
+    path: "/Applications/Slack.app"
+    pos: 7
+  - name: "TablePlus"
+    path: "/Applications/TablePlus.app"
+    pos: 8
+  - name: "Obsidian"
+    path: "/Applications/Obsidian.app"
+    pos: 9
+
+dotfiles_repo: https://github.com/4rgc/baseddotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/.dotfiles
+dotfiles_repo_version: main
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - antidote
+  - btop
+  - chafa
+  - cmake
+  - commitizen
+  - ctags
+  - curl
+  - direnv
+  - evince
+  - fastfetch
+  - fd
+  - ffmpeg
+  - fzf
+  - gettext
+  - gh
+  - git-lfs
+  - gnu-sed
+  - gpg
+  - gron
+  - groovy
+  - gtk-mac-integration
+  - htop
+  - hyperfine
+  - iina/mpv-iina/mpv-iina
+  - imagemagick
+  - jq
+  - libxslt
+  - make
+  - maven
+  - mysql
+  - nmap
+  - nvm
+  - oh-my-posh
+  - openssl@1.1
+  - pandoc
+  - postgresql@14
+  - pv
+  - pyenv
+  - pyenv-virtualenv
+  - readline
+  - ripgrep
+  - rsync
+  - semgrep
+  - socat
+  - sqlite
+  - ssh-copy-id
+  - stow
+  - telnet
+  - terminal-notifier
+  - tiger-vnc
+  - tmux
+  - vault
+  - watchman
+  - wget
+  - yq
+  - zoxide
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - background-music
+  - bitwarden
+  - brave-browser@nightly
+  - docker
+  - docker-desktop
+  - font-meslo-lg-nerd-font
+  - ghostty
+  - karabiner-elements
+  - logi-options+
+  - mactex
+  - mitmproxy
+  - nextcloud-vfs
+  - obsidian
+  - raycast
+  - rectangle
+  - slack
+  - tableplus
+  - visual-studio-code
+  - wacom-tablet
+
+# See `geerlingguy.mac.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osxrc --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
