@@ -1,0 +1,4 @@
+---
+- name: Stow dotfiles into the filesystem
+  command: "cd $HOME/.dotfiles && stow . && cd -"
+  changed_when: false
