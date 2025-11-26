@@ -10,7 +10,6 @@ dockitems_remove:
   - Music
   - News
   - Safari
-  - Mail
   - Maps
   - Photos
   - FaceTime
@@ -28,21 +27,24 @@ dockitems_persist:
   - name: "Notes"
     path: "/Applications/Notes.app"
     pos: 4
+  - name: "Mail"
+    path: "/Applications/Mail.app"
+    pos: 5
   - name: "Calendar"
     path: "/Applications/Calendar.app"
-    pos: 5
+    pos: 6
   - name: "Ghostty"
     path: "/Applications/Ghostty.app"
-    pos: 6
+    pos: 7
   - name: "Slack"
     path: "/Applications/Slack.app"
-    pos: 7
+    pos: 8
   - name: "TablePlus"
     path: "/Applications/TablePlus.app"
-    pos: 8
+    pos: 9
   - name: "Obsidian"
     path: "/Applications/Obsidian.app"
-    pos: 9
+    pos: 10
 
 dotfiles_repo: https://github.com/4rgc/baseddotfiles.git
 dotfiles_repo_accept_hostkey: true
