@@ -15,13 +15,26 @@ Before starting, I completed Apple's mandatory macOS setup wizard (creating a lo
 - Clone mac-dev-playbook to the Mac: `git clone git@github.com:4rgc/mac-dev-playbook.git`
 - Run the playbook
   - If there are errors, you may need to finish up other tasks like installing 'old-fashioned' apps first (since I try to place Photoshop in the Dock and it can't be installed automatically). Then, run the playbook again ;)
-- Manually copy `~/Projects` folder from another Mac.
+- Open Brave through terminal with sync server
+  - Hook into sync chain
+  - Log into the Bitwarden extension
+- Log into Bitwarden app
+- Open Nextcloud, log in
+- Open and enable privacy settings
+  - Karabiner-Elements
+  - Karabiner-EventViewer
+  - Wacom Tablet
+  - Logi Options+
+  - Rectangle, disable Mac tiling
+- Manually copy `~/Projects` and other folders in `~` from another Mac.
 - Copy keychain items from old Mac using "Export items..." or manually for unexportable items.
+- Copy ssh keys from old Mac (`~/.ssh`)
+- Set up "Internet Accounts"
+  - Use Bitwarden to get the account passwords
+- `gh auth login`
 - Install or complete setup for old-fashioned apps:
   - Wireguard
-- Log in to self-hosted Bitwarden
-- Open Calendar and enable personal Google CalDAV/Nextcloud accounts (you have to manually sign in, use Bitwarden
-  passwords).
+- Open Calendar and enable personal Google CalDAV/Nextcloud accounts.
 - These things might be automatable, but I do them manually right now:
   - Configure Time Machine backup drive
   - Install Wireguard VPN configurations (if needed)
