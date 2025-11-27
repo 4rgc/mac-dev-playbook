@@ -11,7 +11,7 @@
     mkdir -p .local
     cd -
 - name: Check if tpm is installed
-  shell: "ls ~/.tmux/plugins 2>/dev/null | grep tpm"
+  shell: "ls ~/.tmux/plugins 2>/dev/null | grep tpm || true"
   register: tpm_installed
 - name: Create ~/.tmux/plugins folder and link homebrew-installed tpm
   shell: |
