@@ -75,7 +75,8 @@ homebrew_installed_packages:
   - gtk-mac-integration
   - htop
   - hyperfine
-  - { name: "iina/mpv-iina/mpv-iina", install_options="HEAD" }
+  # Remove comment when Xcode install is added to playbook
+  # - { name: "iina/mpv-iina/mpv-iina", install_options: "HEAD" }
   - imagemagick
   - jq
   - libxslt
