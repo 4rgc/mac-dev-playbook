@@ -4,11 +4,11 @@
     cd $HOME/.dotfiles
     cp -n .zshrc.example .zshrc
     cd -
-- name: Create .config and .local
+- name: Create .config and .local/bin
   shell: |
     cd 
     mkdir -p .config
-    mkdir -p .local
+    mkdir -p .local/bin
     cd -
 - name: Check if tpm is installed
   shell: "ls ~/.tmux/plugins 2>/dev/null | grep tpm || true"
