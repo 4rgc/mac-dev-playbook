@@ -1,13 +1,15 @@
 ---
 - name: Check if nvm is installed
-  shell: which nvm || true
-  register: which_nvm
+  command: which nvm
+  register: find_nvm
+  ignore_errors: true
 - name: Install nvm
-  shell: "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash"
-  when: which_nvm.stdout == "nvm not found"
+  shell: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+  when: find_nvm is failed
 - name: Check if node is installed
-  shell: which node || true
-  register: which_node
+  command: which node
+  register: find_node
+  ignore_errors: true
 - name: Install node with nvm
   command: nvm install lts/*
-  when: which_node.stdout == "node not found"
+  when: find_node is failed
