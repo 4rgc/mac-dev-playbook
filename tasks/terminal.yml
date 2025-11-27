@@ -2,18 +2,22 @@
 - name: Create .zshrc from example
   shell: |
     cd $HOME/.dotfiles
-    cp .zshrc.example .zshrc
+    cp -n .zshrc.example .zshrc
     cd -
 - name: Create .config and .local
   shell: |
     cd 
-    mkdir .config
-    mkdir .local
+    mkdir -p .config
+    mkdir -p .local
     cd -
+- name: Check if tpm is installed
+  shell: "ls ~/.tmux/plugins 2>/dev/null | grep tpm"
+  register: tpm_installed
 - name: Create ~/.tmux/plugins folder and link homebrew-installed tpm
   shell: |
     cd
-    mkdir .tmux/plugins
+    mkdir -p .tmux/plugins
     cd .tmux/plugins
     ln -s $(brew --prefix)/opt/tpm/share/tpm tpm
     cd -
+  when: tpm_installed.stdout != ""
