@@ -103,6 +103,7 @@ homebrew_installed_packages:
   - terminal-notifier
   - tiger-vnc
   - tmux
+  - tpm
   - hashicorp/tap/vault
   - watchman
   - wget

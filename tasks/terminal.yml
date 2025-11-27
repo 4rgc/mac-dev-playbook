@@ -10,3 +10,10 @@
     mkdir .config
     mkdir .local
     cd -
+- name: Create ~/.tmux/plugins folder and link homebrew-installed tpm
+  shell: |
+    cd
+    mkdir .tmux/plugins
+    cd .tmux/plugins
+    ln -s $(brew --prefix)/opt/tpm/share/tpm tpm
+    cd -
