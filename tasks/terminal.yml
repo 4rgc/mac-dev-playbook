@@ -20,4 +20,4 @@
     cd .tmux/plugins
     ln -s $(brew --prefix)/opt/tpm/share/tpm tpm
     cd -
-  when: tpm_installed.stdout != ""
+  when: tpm_installed.stdout == ""
