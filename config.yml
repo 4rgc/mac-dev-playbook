@@ -1,6 +1,5 @@
 ---
 configure_dotfiles: true
-stow_dotfiles: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
@@ -76,7 +75,7 @@ homebrew_installed_packages:
   - gtk-mac-integration
   - htop
   - hyperfine
-  - iina/mpv-iina/mpv-iina
+  - { name: "iina/mpv-iina/mpv-iina", install_options="HEAD" }
   - imagemagick
   - jq
   - libxslt
@@ -104,13 +103,14 @@ homebrew_installed_packages:
   - terminal-notifier
   - tiger-vnc
   - tmux
-  - vault
+  - hashicorp/tap/vault
   - watchman
   - wget
   - yq
   - zoxide
 
-homebrew_taps: []
+homebrew_taps:
+  - hashicorp/tap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -119,10 +119,9 @@ homebrew_cask_apps:
   - brave-browser@nightly
   - docker
   - docker-desktop
-  - font-meslo-lg-nerd-font
   - ghostty
   - karabiner-elements
-  - logi-options+
+  - logi-options-plus
   - mactex
   - mitmproxy
   - nextcloud-vfs

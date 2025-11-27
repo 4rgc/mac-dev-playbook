@@ -3,7 +3,7 @@
   hosts: all
 
   vars_files:
-    - default.config.yml
+    - config.yml
 
   pre_tasks:
     - name: Include playbook configuration.
@@ -28,7 +28,6 @@
 
   tasks:
     - import_tasks: tasks/stow-dotfiles.yml
-      when: stow_dotfiles
       tags: ["stow-dotfiles"]
 
     - import_tasks: tasks/osx.yml
