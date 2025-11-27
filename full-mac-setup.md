@@ -28,12 +28,14 @@ Before starting, I completed Apple's mandatory macOS setup wizard (creating a lo
 
 ## Set up preferences
 
+Crossed-out options are automated, but included for documentation.
+
 - Set up preferences:
   - Keyboard
-    - Key repeat rate -> ‘Fast’,
-    - Delay until repeat to ‘Short’
-    - Press ‘Globe’ key to -> ‘Change Input Source’
-    - Keyboard navigation -> On
+    - ~Key repeat rate -> ‘Fast’,~
+    - ~Delay until repeat to ‘Short’~
+    - ~Press ‘Globe’ key to -> ‘Change Input Source’~
+    - ~Keyboard navigation -> On~
     - Keyboard shortcuts
       - Mission Control
         - Mission Control -> Off
@@ -43,27 +45,28 @@ Before starting, I completed Apple's mandatory macOS setup wizard (creating a lo
         - Create 7 more desktops
         - Restart System Preferences app, go back to Keyboard shortcuts
         - Switch to Desktop 1-8 -> On
-      - Input sources
-        - Both on
-      - Accessibility
-        - Zoom -> On
-      - Function keys -> on
-      - Trackpad
-        - Scroll & Zoom -> Natural scrolling -> off
-    - Input sources -> “Canadian, Ukrainian, Japanese”
-    - Dictation Language -> English (Canada)
+      - ~Input sources~
+        - ~Both on~
+      - ~Accessibility~
+        - ~Zoom -> On~
+      - ~Function keys -> on~
+      - ~Trackpad~
+        - ~Scroll & Zoom -> Natural scrolling -> off~
+    - ~Input sources -> “Canadian, Ukrainian, Japanese”~
+    - ~Dictation Language -> English (Canada)~
   - Desktop & Dock
-    - Automatically hide and show the Dock
-    - Stage manager -> On
-    - Show Widgets In stage manager -> Off
-    - Windows -> Close windows when quitting an application -> Off
+    - ~Automatically hide and show the Dock~
+    - ~Stage manager -> On~
+    - ~Show Widgets In stage manager -> Off~
+    - ~Windows -> Close windows when quitting an application -> Off~
     - Mission Control -> Automatically rearrange Spaces based on most recent use -> Off
+    - ~Mission Control -> When switching to an application, switch to a Space with open windows for the application -> On~
     - Shortcuts
       - Mission Control -> None
       - Application windows -> None
   - Screen Time -> Share Across Devices -> On
-    - Turn display off on battery when inactive -> Never
-    - Turn display off on power adapter when inactive -> Never
+    - ~Turn display off on battery when inactive -> Never~
+    - ~Turn display off on power adapter when inactive -> Never~
     - Show 24-hour time -> On
     - Show message when locked -> On
       - “Warning: Authorized Access Only This system is intended solely for use by authorized personnel. Unauthorized access, use, or dissemination of information is strictly prohibited and may result in severe consequences.”
