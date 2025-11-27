@@ -1,0 +1,12 @@
+---
+- name: Create .zshrc from example
+  shell: |
+    cd $HOME/.dotfiles
+    cp .zshrc.example .zshrc
+    cd -
+- name: Create .config and .local
+  shell: |
+    cd 
+    mkdir .config
+    mkdir .local
+    cd -

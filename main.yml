@@ -27,6 +27,9 @@
       tags: ["dock"]
 
   tasks:
+    - import_tasks: tasks/terminal.yml
+      tags: ["terminal"]
+
     - import_tasks: tasks/stow-dotfiles.yml
       tags: ["stow-dotfiles"]
 
